@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #02002e;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container nav{
+    display: flex;
+    gap: 20px;
+}
+
+header .container nav ul li{
+    list-style: none;
+}
+
+header .container nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    background-image: url(./assets/images/bg.png);
+    background-size: cover;
+}
+
+main .container{
+    padding: 200px 0;
+}
+
+main .container h3{
+    color: white;
+    text-transform: uppercase;
+}
+
+main .container h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 60px;
+    width: 500px;
+    margin-top: 30px;
+}
+
+main .container .btn button{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+main .container .pages{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+main .container .pages span{
+    color: white;
+    font-size: 20px;
+}
+
+main .container .pages .line {
+    width: 35px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+
+section#services .container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+section#services .container .card{
+    width: 250px;
+    padding: 0px 20px;
+    position: relative;
+    bottom: 130px;
+    background-color: white;
+}
+
+section#services .container .card:hover{
+    background-color: #3680E1;
+    color: white;
+}
+
+section#services .container .card i {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+}
+
+section#services .container .card h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+    transform: all ease 3s;
+}
+
+section#services .container .card p{
+    margin-top: 40px;
+    color: #CCCCCC;
+}
+
+section#services .container .card button{
+    margin-top: 10px;
+    background-color: transparent;
+    border: 0;
+}
+
+section#services .container .card .wrong{
+    position: relative;
+    bottom: 40px;
+}
+
+
+section#photos .container .bottom {
+    display: flex;
+    gap: 30px;
+}
+
+section#photos .container .bottom ul li {
+    list-style: none;
+}
+
+section#photos .container .bottom ul li a{
+    text-decoration: none;
+    color: #CCCCCC;
+}
+
+section#photos .container .bottom ul li .active{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+section#photos .container .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+section#photos .container .button {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+section#photos .container button {
+    background-color: white;
+    padding: 10px 20px;
+    color: #919090;
+
+}
