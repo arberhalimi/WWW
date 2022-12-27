@@ -253,7 +253,7 @@ section#prices .container .price-table .bottom-part h1{
 }
 
 section#prices .container .price-table .bottom-part .price{
-    background: url(./assets/images/programer.jpeg) repeat lightblue;
+    background: linear-gradient(0deg, rgb(31, 80, 170, 0.9), rgb(31, 80, 170, 0.9)), url('./assets/images/programer.jpeg');
     background-size: cover;
 }
 
