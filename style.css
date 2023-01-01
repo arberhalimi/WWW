@@ -409,47 +409,94 @@ section#collobators .container .trusted-friends{
 section#collobators .container .trusted-companies{
     margin-bottom: 50px;
     position: relative;
-    bottom: 0px;
+    bottom: 80px;
 }
 
 
 section#contact {
-    background-color: #f2efef;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
+    background-color:rgb(1, 18, 48);
 }
 
-section#contact .contact-form form{
+section#contact .container {
+    padding: 0 70px;
+}
+
+section#contact .container .contact-form form .container {
+    margin-top: 50;
+}
+
+section#contact .container .contact-form form .input {
     display: flex;
-    flex-direction: column;
-    color: #02002e;
-    gap: 20px;
-    margin-left: 20px;
+    justify-content: center;
+    gap: 30px;
 }
 
-section#contact .contact-form form input,
-section#contact .contact-form form textarea{
+section#contact .container .contact-form form .input input{
     background-color: transparent;
-    width: 500px;
+    width: 350px;
     padding: 5px;
+    border: 1px solid lightgray;
 }
 
-section#contact .contact-form form h3{
+section#contact .container .contact-form form textarea{
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    margin-top: 10px;
+}
+
+section#contact .container .contact-form form h3{
     margin-top: 50px;
     font-size: 28px;
+    color: lightgray;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
-section#contact .contact-form form button{
+section#contact .container .contact-form form button{
     width: 100px;
-    height: 50px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.c-icons {
+    background: linear-gradient(0deg, rgba(1, 30, 82, 0.6), rgba(1, 17, 46, 0.6), url('./assets/images/building.jpeg'));
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.c-icons div{
+    width: 300px;
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.c-icons div i{
+    color: lightblue;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 footer{
     color: white;
     background-color: #02002e;
     padding: 60px;
-    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
 }
 
 

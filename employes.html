@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="./assets/style.css">
 
     <style>
+
+        :root{
+            --p-color: rgb(165, 165, 165);
+            --h-color: rgb(77, 77, 77);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -44,10 +50,53 @@
             color: white;
         }
 
+        .categories {
+            box-shadow: 0px 0px 5px 0px rgba(143, 113, 113, 0.75);
+        }
+
+        .categories .container ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 30px 0;
+        }
+
+        .categories .container ul li {
+            list-style: none;
+        }
+
+        .categories .container ul li a {
+            text-decoration: none;
+            color: rgb(165, 165, 165);
+        }
+
+        .categories .container ul li .active {
+            color: #02002e;
+        }
+
+        .we {
+            font-size: 30px;
+            position: absolute;
+            left: 50px;
+            top: 50%;
+            transform: rotate(270deg);
+            display: block;
+            text-shadow:-1px 10px 3px #857979;
+        }
+
+        .meet {
+            margin: 20px auto;
+            width: 210px;
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #02002e;
+            border-bottom: 1px solid #02002e;;
+        }
 
         section#punetoret .container{
             display: flex;
-            gap: 30px;
+            gap: 70px;
             margin-top: 50px;
             margin-bottom: 50px;
         }
@@ -58,11 +107,13 @@
         
         section#punetoret .container .paragrafi h1{
             font-size: 32px;
+            color: var(--h-color);
         }
 
         section#punetoret .container .paragrafi p{
             margin-top: 20px;
             font-size: 18px;
+            color: var(--p-color);
         }
 
         section#punetoret .container .profilet img{
@@ -75,6 +126,11 @@
         section#punetoret .container .profilet h3,
         section#punetoret .container .profilet h1{
             margin-bottom: 20px;
+
+        }
+
+        section#punetoret .container .profilet blockquote {
+            color: #464444;
         }
 
         footer{
@@ -86,9 +142,9 @@
     </style>
 </head>
     
-    <body>
+<body>
 
-        <header>
+    <header>
             <div class="container">
                 <div class="logo">
                     <img src="./assets/images/logo.png" alt="">
@@ -102,37 +158,49 @@
                     <ul><li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li></ul>
                 </nav>
             </div>
-        </header>
-	
-	<section id="punetoret">
+    </header>
+
+    <div class="categories">
         <div class="container">
-            <div class="paragrafi">
-                <h1>Dental Awards & Recognition
-                Voted One of the “Top Dentists in Texas”</h1>
-                <p>Dr. Carlson has been voted by his peers as one of the Top Dentists in Texas and included in Texas Monthly
-                Super Dentists. He has also been chosen by other dentists in San Antonio as one of the top dentists in
-                San Antonio, as well as one of America’s Top Dentists. Dr. Carlson is honored by each accolade.</p>
-                <p> Craig Carlson, DDS has been recognized as one of the top San Antonio Dentistry practices.</p>
-                <p> View the gallery below to see some of his dental achievements: </p>
-            </div>
-            <div class="profilet">
-                <h3>Meet the doctors</h3>
-                <h1>Mr peanut butter</h1>
-                
-                <img src="./assets/images/johntravolta.jpeg" alt=""> 
-                <blockquote>Jam punetor shume i mire, ju premtoj.</blockquote> 
-            </div>
+            <ul>
+                <li><a href="#" class="active">Bussines Consulting</a></li>
+                <li><a href="#">Lawyer Consulting</a></li>
+                <li><a href="#">Online Consulting</a></li>
+                <li><a href="#">IT Menagment</a></li>
+            </ul>
         </div>
-	</section>
+    </div>
+	
+    <section id="punetoret">
+            <p class="we">WE PRO. </p>
+            
+            <h3 class="meet">Meet the profesionist</h3>
+            <div class="container">
+                <div class="paragrafi">
+                    <h1>Mr.Penaut Butter “Top Pros in Texas”</h1>
+                    <p>Dr. Carlson has been voted by his peers as one of the Top Dentists in Texas and included in Texas Monthly
+                    Super Dentists. He has also been chosen by other dentists in San Antonio as one of the top dentists in
+                    San Antonio, as well as one of America’s Top Dentists. Dr. Carlson is honored by each accolade.</p>
+                    <p> Craig Carlson, DDS has been recognized as one of the top San Antonio Dentistry practices.</p>
+                    <p> View the gallery below to see some of his dental achievements: </p>
+                </div>
+                <div class="profilet">
+                    <h1>Mr peanut butter</h1>
+                    
+                    <img src="./assets/images/johntravolta.jpeg" alt=""> 
+                    <blockquote>Jam punetor shume i mire, ju premtoj.</blockquote> 
+                </div>
+            </div>
+    </section>
 
     <footer>
         Copyright &copy; All rights reserved
     </footer>
+        
 	
 	
 	
 	
+</body>
 	
-	</body>
-	
-	</html>
+</html>
