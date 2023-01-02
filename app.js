@@ -17,5 +17,3 @@ container.addEventListener("click", function (e){
         element.classList.add("active")
     }
 });
-
-var uja = "uja"
