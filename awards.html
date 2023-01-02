@@ -10,11 +10,15 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;1,400&family=Nothing+You+Could+Do&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,300;0,700;1,500&display=swap" rel="stylesheet">
 
     <style>
         * {
             margin: 0;
             padding: 0;
+            font-family: 'Playfair Display', serif;
         }
 
 
@@ -47,13 +51,25 @@
             color: white;
         }
 
+        section#quote {
+            background-color: gray;
+        }
+
         section#quote .container {
             padding: 50px;
+        }
+
+        section#note{ 
+            
+            background-color: lightgray;
         }
 
         section#note .container .h1 {
             font-size: 36px;
             text-align: center;
+            padding-top: 40px;
+            color: rgb(58, 58, 58);
+
         }
 
         section#note .container .prices {
@@ -65,24 +81,40 @@
         section#note .container .prices .medals {
             width: 30%;
             padding: 50px;
+            margin-bottom: 80px;
+            
+            background-color: gray;
         }
 
-        section#note .container .prices .medals span {
+        section#note .container .prices .medals i{
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        section#note .container .prices .medals span{
             display: flex;
             justify-content: center;
+            color: white;
         }
 
         section#note .container .prices .medals h1 {
             margin-top: 20px;
             font-size: 20px;
             margin-bottom: 10px;
+            color: white;
+        }
+
+        section#note .container .prices .medals h3{
+            color: white;
+            font-size: 14px;
         }
 
         #safety .container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
-            margin-top: 50px;
+            margin-top: 100px;
         }
 
         #safety .container .img img {
@@ -96,7 +128,6 @@
 
         #safety .container .safety h3 {
             margin-bottom: 20px;
-            margin-top: 30px;
         }
 
         #safety .container .safety h1 {
@@ -108,24 +139,27 @@
             font-size: 18px;
         }
 
-        #additional .container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-top: 100px;
-            margin-bottom: 100px;
 
+        #awards .container h1{
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 20px;
+            font-size: 36px;
         }
 
         #additional .container .left,
-        #additional .container .right {
+        #additional .container .right{
             width: 80%;
         }
 
         #additional .container .left div,
-        #additional .container .right div {
+        #additional .container .right div{
             margin-bottom: 40px;
         }
-
+        
+        #awards .container table td{
+            padding-bottom: 20px;
+        }
 
         footer {
             color: white;
@@ -165,13 +199,11 @@
             </nav>
         </div>
     </header>
-
+   
     <section id="quote">
         <div class="container">
             <blockquote>
-                Our employee-owners are among the best in the industry, many of whom have been honored as 40 Under 40
-                honorees in their communities or by ENR, an industry-leading publication. These accomplishments reflect
-                the skill and grit of our employee-owners and the commitment we have to fulfilling our mission.
+                Our employee-owners are among the best in the industry, many of whom have been honored as 40 Under 40 honorees in their communities or by ENR, an industry-leading publication. These accomplishments reflect the skill and grit of our employee-owners and the commitment we have to fulfilling our mission.
             </blockquote>
         </div>
     </section>
@@ -181,20 +213,20 @@
             <h1 class="h1">Noteworthy</h1>
             <div class="prices">
                 <div class="medals">
-                    <i></i>
+                    <i class="fa-solid fa-user-group"></i>
                     <span>#67</span>
                     <h1>100 LARGEST EMPLOYEE-OWNED COMPANIES</h1>
                     <h3>National Center for Employee Ownership/October 2021</h3>
                 </div>
                 <div class="medals">
-                    <i></i>
+                    <i class="fa-solid fa-medal"></i>
                     <span>#61</span>
                     <h1>ENGINEERING NEWS RECORD
                         TOP 400 CONTRACTORS</h1>
                     <h3>May 2022</h3>
                 </div>
                 <div class="medals">
-                    <i></i>
+                    <i class="fa-solid fa-trophy"></i>
                     <span>#67</span>
                     <h1>“NATIONS SAFEST CONTRACTOR”
                         WITH 2 AGC GRAND
@@ -223,7 +255,7 @@
         </div>
     </section>
 
-    <section id="additional">
+    <section id="awards">
         <div class="container">
             <div class="left">
                 <div>
@@ -262,7 +294,7 @@
                     <p>La Cantera Town Center Roads and Parks</p>
                     <p>2022</p>
                 </div>
-
+                
             </div>
             <div class="right">
                 <div>
