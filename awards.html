@@ -341,19 +341,7 @@
         <canvas id="myCanvas1" width="100" height="50" style="border:1px solid #d3d3d3;">
             Your browser does not support the HTML5 canvas tag.</canvas>
 
-        <script>
-            var c = document.getElementById("myCanvas1");
-            var ctx = c.getContext("2d");
 
-            // Create gradient
-            var grd = ctx.createRadialGradient(50, 50, 25, 100, 50, 150);
-            grd.addColorStop(0, "navy");
-            grd.addColorStop(1, "white");
-
-            // Fill with gradient
-            ctx.fillStyle = grd;
-            ctx.fillRect(0, 0, 100, 50);
-        </script>
 
         <svg height="200" width="200">
             <defs>
@@ -379,6 +367,7 @@
             Your browser does not support the HTML canvas tag.</canvas>
 
         <script>
+
             var c = document.getElementById("myCanvas");
             var ctx = c.getContext("2d");
             ctx.beginPath();
@@ -387,9 +376,19 @@
             ctx.fillText("Recognition", 15, 45);
             ctx.stroke();
 
-        </script>
 
-        <script>
+            var c = document.getElementById("myCanvas1");
+            var ctx = c.getContext("2d");
+
+            // Create gradient
+            var grd = ctx.createRadialGradient(50, 50, 25, 100, 50, 150);
+            grd.addColorStop(0, "navy");
+            grd.addColorStop(1, "white");
+
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(0, 0, 100, 50);
+
             var image = new Image();
             image.src = "assets\images\logo.png";
 

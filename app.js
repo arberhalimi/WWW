@@ -18,4 +18,3 @@ container.addEventListener("click", function (e){
     }
 });
 
-var uja = "uja"
