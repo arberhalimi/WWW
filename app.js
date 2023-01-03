@@ -1,11 +1,11 @@
 const container = document.querySelector("#photos");
 const btns = document.querySelectorAll(".tab-btn");
 const articles = document.querySelectorAll(".images");
-const viewMore = document.getElementsByClassName("view-more")
+const input = document.querySelector("input")
 
 container.addEventListener("click", function (e){
-    const id = e.target.dataset.id;
-    if(id){
+    var id = e.target.dataset.id;
+    if(id == id){
         btns.forEach(function (btn){
             btn.classList.remove("active");
             e.target.classList.add("active");
@@ -17,3 +17,19 @@ container.addEventListener("click", function (e){
         element.classList.add("active")
     }
 });
+
+input.addEventListener("keyup", display);
+
+function display (){
+    localStorage.setItem("value", input.value);
+}
+
+
+const sessionStorage = [
+    {name: "Arber"},
+    {name: "Atdhe"}
+]
+
+function ss (){
+    sessionStorage.setItem("name", "Arber")
+}

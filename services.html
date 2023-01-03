@@ -169,6 +169,24 @@
            color: rgb(91, 91, 91);
         }
 
+        #iframes .container{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        #iframes .container iframe {
+            width: 100%;
+        }
+
+        #audio .container {
+            display: flex;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+
         footer{
             color: white;
             background-color: #02002e;
@@ -288,6 +306,27 @@
             <div class="img">
                 <img src="./assets/images/it.jpeg" alt="">
             </div>
+        </div>
+    </section>
+
+    <section id="iframes">
+        <div class="container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wlHrSZ7BVFI?start=18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_WH6cbwZ5m8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kPxOKgkY_-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="audio">
+        <div class="container">
+            <audio controls >
+                <source src="./assets/audio/audio1.ogg" type="audio/ogg">
+                <source src="./assets/audio/audio1.mp3" type="audio/mpeg">
+            </audio>
+            <audio controls >
+                <source src="./assets/audio/audio1.ogg" type="audio/ogg">
+                <source src="./assets/audio/audio2.mp3" type="audio/mpeg">
+              </audio>
         </div>
     </section>
 

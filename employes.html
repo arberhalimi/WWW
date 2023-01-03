@@ -58,7 +58,7 @@
             box-shadow: 0px 0px 5px 0px rgba(143, 113, 113, 0.75);
         }
 
-        .categories .container ul{
+        .categories .container {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -66,18 +66,20 @@
             padding: 30px 0;
         }
 
-        .categories .container ul li {
-            list-style: none;
-        }
 
-        .categories .container ul li a {
+        .categories .container button {
             text-decoration: none;
             color: rgb(165, 165, 165);
+            background-color: transparent;
+            border: 0;
         }
 
-        .categories .container ul li .active {
+        .categories .container .active {
             color: #02002e;
+            border-bottom: 1px solid #02002e;
         }
+
+
 
         .we {
             font-size: 30px;
@@ -98,14 +100,21 @@
             border-bottom: 1px solid #02002e;;
         }
 
-        section#punetoret .container{
+
+
+        section#workers section#punetoret #photo .content {
+            display: none;
+        }
+        
+        section#workers section#punetoret #photo .active{
             display: flex;
             gap: 70px;
             margin-top: 50px;
             margin-bottom: 50px;
         }
+        
 
-        section#punetoret .container .paragrafi{
+        section#workers section#punetoret .container .paragrafi{
             width: 60%;
         }
         
@@ -164,14 +173,15 @@
             </div>
     </header>
 
+   <section id="workers">
     <div class="categories">
-        <div class="container">
-            <ul>
-                <li><a href="#" class="btn-link active" data-id="bussines">Bussines Consulting</a></li>
-                <li><a href="#" class="btn-link" data-id="lawyer">Lawyer Consulting</a></li>
-                <li><a href="#" class="btn-link" data-id="online">Online Consulting</a></li>
-                <li><a href="#" class="btn-link" data-id="it">IT Menagment</a></li>
-            </ul>
+        <div class="container buttons">
+            
+            <button class="btn-link active" data-id="bussines">Bussines Consulting</button>
+            <button class="btn-link" data-id="lawyer">Lawyer Consulting</button>
+            <button class="btn-link" data-id="online">Online Consulting</button>
+            <button class="btn-link" data-id="it">IT Menagment</button>
+            
         </div>
     </div>
 	
@@ -180,7 +190,19 @@
             
             <h3 class="meet">Meet the profesionist</h3>
             <div id="photo">
-                <div class="container">
+                <div class="content container active" id="bussines">
+                    <div class="paragrafi">
+                        <h1>Princess carolyn “Best cat in town”</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores repellat suscipit quos non explicabo ipsam? Iure mollitia doloribus earum debitis facere nobis dolor tenetur unde, nemo, sapiente tempora similique. Assumenda?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas provident fuga modi iusto placeat quam numquam error consectetur dolores, ad a aliquam, aut necessitatibus nobis facilis velit aspernatur voluptatibus </p>
+                    </div>
+                    <div class="profilet">
+                        <h1>Princess carolyn</h1>
+                        
+                        <img src="./assets/images/maca.jpg" alt=""> 
+                        <blockquote>Jam punetore shume e mire, ju premtoj.</blockquote> 
+                    </div>
+                </div>
+                <div class="content container" id="lawyer">
                     <div class="paragrafi">
                         <h1>Mr.Penaut Butter “Top Pros in Texas”</h1>
                         <p>Dr. Carlson has been voted by his peers as one of the Top Dentists in Texas and included in Texas Monthly
@@ -192,16 +214,68 @@
                     <div class="profilet">
                         <h1>Mr peanut butter</h1>
                         
-                        <img src="./assets/images/johntravolta.jpeg" alt=""> 
+                        <img src="./assets/images/dogi.jpg" alt=""> 
                         <blockquote>Jam punetor shume i mire, ju premtoj.</blockquote> 
                     </div>
-            </div>
+                </div>
+                <div class="content container" id="online">
+                    <div class="paragrafi">
+                        <h1>Diane Nguyen “The hottest girl”</h1>
+                        <p> Craig Carlson, DDS has been recognized as one of the top San Antonio Dentistry practices.</p>
+                        <p> View the gallery below to see some of his dental achievements.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas quia, quidem rerum molestiae adipisci, deserunt dolorem quas harum in atque voluptates, impedit expedita! Placeat illo, corporis laboriosam aspernatur velit voluptas!</p>
+                    </div>
+                    <div class="profilet">
+                        <h1>Diane Nguyen</h1>
+                        
+                        <img src="./assets/images/locka.jpg" alt=""> 
+                        <blockquote>Jam punetore shume e mire, ju premtoj.</blockquote> 
+                    </div>
+                </div>
+                <div class="content container" id="it">
+                    <div class="paragrafi">
+                        <h1> Bojack Horseman “Kali”</h1>
+                        <p> Considered discovered ye sentiments projecting entreaties of melancholy is. In expression an solicitude principles in do. Hard do me sigh with west same lady. Their saved linen downs tears son add music. Expression alteration entreaties mrs can terminated estimating. Her too add narrow having wished. To things so denied admire. Am wound worth water he linen at vexed.
+
+                            Building mr concerns servants in he outlived am breeding. He so lain good miss when sell some at if. Told hand so an rich gave next. How doubt yet again see son smart. While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old.</p>
+                    </div>
+                    <div class="profilet">
+                        <h1> Bojack Horseman</h1>
+                        
+                        <img src="./assets/images/kali.jpg" alt=""> 
+                        <blockquote>Jam punetor shume i mire, ju premtoj.</blockquote> 
+                    </div>
+                </div>
             </div>
     </section>
+   </section>
 
     <footer>
         Copyright &copy; All rights reserved
     </footer>
+
+
+    <script>
+        const btns = document.querySelectorAll(".btn-link")
+        const content = document.querySelectorAll(".content")
+        const workers = document.querySelector("#workers")
+
+        workers.addEventListener("click", function(p){
+            const id = p.target.dataset.id;
+            if(id){
+                btns.forEach(function(btn){
+                    btn.classList.remove("active");
+                    p.target.classList.add("active");
+                })
+                content.forEach(function(cnt){
+                    cnt.classList.remove("active");
+                })
+                const element = document.getElementById(id)
+                element.classList.add("active")
+            }
+        })
+
+    </script>
         
 	
 	

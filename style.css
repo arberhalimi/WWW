@@ -9,6 +9,11 @@
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -218,14 +223,14 @@ section#testimonials .container .test blockquote {
 }
 
 section#testimonials .container .test .author {
-    display: flex;
-    gap: 10px;
 }
 
 section#testimonials .container .test .author img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    float: left;
+    margin-right: 20px;
 }
 
 section#prices .container {
@@ -514,6 +519,15 @@ section#contact .container .contact-form form button{
     color: lightblue;
     text-align: center;
     margin-bottom: 10px;
+}
+
+label {
+    color: lightgray;
+}
+
+#contact .container .contact-form form .checkbox {
+    display: flex;
+    gap: 100px;
 }
 
 footer{
