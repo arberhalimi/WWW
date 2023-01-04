@@ -96,7 +96,7 @@
 
         .contact-us {
             border-radius: 5px;
-            background-color: #f2f2f2;
+            background-color: #f0f8ff;
             padding: 10px;
         }
 
@@ -131,21 +131,19 @@
             text-align: center;
             position: relative;
             margin: 1em;
-            border-bottom: 0.1em solid gray;
+
         }
 
         .email1 {
             text-align: center;
             position: relative;
             margin: 1em;
-            border-bottom: 0.1em solid gray;
         }
 
         .location {
             text-align: center;
             position: relative;
             margin: 1em;
-            border-bottom: 0.1em solid gray;
         }
 
         #canvas {
@@ -223,20 +221,29 @@
         }
 
         #show_login {
-            padding: 0.5em 1em;
+            padding: 0.7em 1.2em;
+            margin-bottom: 30px;
+            border: none;
+            box-shadow: 3px 3px 2px 0px rgba(94, 93, 93, 0.75);
+            border-radius: 5px;
         }
 
         #loginform {
-            background-image: url("images/login.jpg");
+            background-color: #02002e;
             padding: 2em;
             visibility: hidden;
             display: none;
+            position: absolute;
+            left: 450px;
+            bottom: 20px;
+
         }
 
         #loginform form {
             display: flex;
             flex-direction: column;
             gap: 1em;
+ 
         }
 
         #loginform p {
@@ -255,7 +262,6 @@
 
         .radio_butonat {
             padding: 0.5em;
-            border-bottom: 1px solid black;
         }
 
         .checkbox {
@@ -341,6 +347,7 @@
                 <ul><li><a href="#services">Services</a></li></ul>
                 <ul><li><a href="./news-events.html">News</a></li></ul>
                 <ul><li><a href="./Awards.html">Awards</a></li></ul>
+                <ul><li><a href="./contact.html">Contact</a></li></ul>
                 <ul><li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li></ul>
             </nav>
         </div>
@@ -365,7 +372,7 @@
                             <i class="fa-solid fa-phone" style="width:2em; height: 2em;"></i>
                         </p>
                         <h2>
-                            Numri i telefonit:
+                            Telephone:
                         </h2>
                         <p>
                             0113 288 6000
@@ -374,10 +381,10 @@
                     <div class="location">
                         <i class="fa-solid fa-location-pin" style="width:2em; height: 2em;"></i>
                         <div>
-                            <h2>Lokacioni:</h2>
+                            <h2>Location:</h2>
                             <p><a href="https://www.google.com/maps/place/Statue+of+Bill+Clinton/@42.6629138,21.1655028,13z/data=!4m13!1m7!3m6!1s0x13549ee605110927:0x9365bfdf385eb95a!2sPristina!3b1!8m2!3d42.6629138!4d21.1655028!3m4!1s0x0:0x9f9ca7c7ab182591!8m2!3d42.6540046!4d21.1532146">Prishtine</a>
                             </p>
-                            <p>E hene - e premte : 08:00-20:00</p>
+                            
                         </div>
                     </div>
 
@@ -385,13 +392,12 @@
                 <div class="contact-form">
                     <div class="login">
                         <p id="current-user"></p>
-                        <input type="button" id="show_login" value="Kycu ne llogari">
+                        <input type="button" id="show_login" value="Log In">
                         <div id = "loginform">
                             <form method = "post" onsubmit = "return submitLogin()">
                                 <p>Shkruaj emailin dhe fjalekalimin</p>
-                                <!-- <keygen name="rsaPublicKey" keytype="RSA"> -->
                                 <input type = "email" id = "email" placeholder = "Email" name = "uid">
-                                <input type = "password" id = "password" name = "upass" placeholder = "********">
+                                <input type = "password" id = "password" name = "upass" placeholder = "Password">
                                 <input type = "submit" id = "dologin" value = "Login">
                             </form>
                         </div>
@@ -400,11 +406,11 @@
                         <div class="firstname-lastname">
                             <div class="firstname">
                                 <label>Emri</label>
-                                <input type="text" required placeholder="Emri juaj.." id="name">
+                                <input type="text" required placeholder="Name" id="name">
                             </div>
                             <div class="last-name">
                                 <label>Mbiemri</label>
-                                <input type="text" required id="lastname" name="lastname" placeholder="Mbiemri juaj..">
+                                <input type="text" required id="lastname" name="lastname" placeholder="Surname">
                             </div>
                         </div>
                         <label>Email</label>
@@ -413,7 +419,7 @@
                         <div class="phone-time">
                             <div class="phone">
                                 <label>Tel:</label>
-                                <input type="text" required id="phone" name="phone" placeholder="xxxxxxxxx" pattern="[0-9]{9}">
+                                <input type="text" required id="phone" name="phone" placeholder="*******" pattern="[0-9]{9}">
                             </div>
 
                     </form>
@@ -440,6 +446,7 @@
         </div>
     </footer>
 
+    <script src="./jquery.js"></script>
 
     <script>
         var g = document.getElementById("canvas");
@@ -515,6 +522,31 @@
             alert("Forma juaj eshte pranuar");
             return true;
         }
+
+    </script>
+
+    <script>
+            $(document).ready(function()
+            {
+            $("#show_login").click(function(){
+            showpopup();
+            });
+            $("#close_login").click(function(){
+            hidepopup();
+            });
+            });
+
+            function showpopup()
+            {
+            $("#loginform").fadeIn();
+            $("#loginform").css({"visibility":"visible","display":"block"});
+            }
+
+            function hidepopup()
+            {
+            $("#loginform").fadeOut();
+            $("#loginform").css({"visibility":"hidden","display":"none"});
+            }
     </script>
 
 
